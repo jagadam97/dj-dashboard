@@ -1,3 +1,16 @@
 {
-  "unstable": ["unsafe-proto"]
+  "unstable": [
+    "unsafe-proto"
+  ],
+  "deploy": {
+    "project": "2e3545c1-149e-441b-9309-1aa6578cee89",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [
+      ".next",
+      "public"
+    ],
+    "entrypoint": "jsr:@deno/nextjs-start/v15"
+  }
 }
